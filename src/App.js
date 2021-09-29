@@ -13,7 +13,7 @@ class App extends React.Component {
   };
 
   leaveFeedback = event => {
-    const targetBtn = event.target.textContent.toLowerCase();
+    const targetBtn = event.target.textContent;
     this.setState(prevState => ({
       [targetBtn]: prevState[targetBtn] + 1,
     }));
